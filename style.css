@@ -1,0 +1,234 @@
+/* menu */
+
+.menu {
+    width:1350px;
+    background:rgb(66, 140, 238);
+    height: 55px;
+   margin-left: auto;
+   margin-right: auto;
+
+  
+}
+
+ a {
+    text-decoration:none;
+}
+  li {
+list-style: none;
+}
+.menu li:hover > a {
+    text-decoration:none;
+    color: red;
+    background-color: white;
+}
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+} 
+.menu > ul > li {
+ 
+    display:inline-block;
+    position:relative;
+    font-size:20px;
+}
+ ul > li > a {
+    padding:16px 30px;
+    display:inline-block;
+    color: white;
+}
+.menu > ul > li:hover > a {
+    background:white;
+}
+.menu li:hover .sub-menu {
+
+    opacity:1;
+    z-index: 1;
+}
+.sub-menu {
+    width: 100%;
+    padding: 15px 0px;
+    position:absolute;
+    z-index:-1;
+    opacity:0;
+    background:rgb(66, 140, 238);
+}
+.sub-menu li {
+    display:block;
+    align-items: center;
+}
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*----------*/
+
+/* ảnh đầu trang*/
+.anhdau{
+    width:1350px;
+    height: 100px;
+   margin-left: auto;
+   margin-right: auto;
+ margin-bottom: -19px;
+}
+/*----------*/
+
+/* main */
+.letrai
+{
+    width: auto;
+    height: 1250px;
+    overflow: hidden;
+    float: left;
+    background-color: rgb(192, 189, 189);
+    padding: 5px 5px;
+margin-top: -1px;
+margin-left: auto;
+}
+
+
+
+
+.lephai
+{
+    width: 1110px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    padding: 5px 5px;
+    text-align: center;
+margin-right: auto;
+}
+
+.mot {
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+
+    padding: 15px 15px;
+
+}
+.hai {
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+
+    padding: 15px 15px;
+
+}
+.ba {
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+
+    padding: 15px 15px;
+ 
+}
+.bon {
+    width: 240px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+
+    padding: 15px 15px;
+
+}
+
+.lephai h2{
+    color: blue;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* chân trang */
+.footer {
+   
+   
+    width: auto;
+    height: 220px;
+    background-color: lightgray;
+    color: white;
+margin-top: -20px;
+margin-left: auto;
+margin-right: auto;
+ }
+.left-page{
+    width: 200px;
+    height: 170px;
+    overflow: hidden;
+    float: left;
+/*background-color: blue;*/
+    padding: 15px 15px;
+}
+.middle-page{
+    width: 790px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+/*background-color: rgb(255, 102, 0);*/
+    padding: 15px 15px;
+}
+.right-page{
+    width: 250px;
+    height: 170px;
+    overflow: hidden;
+    float: left;
+/*background-color: rgb(0, 255, 76);*/
+    padding: 15px 15px;
+}
+
+
+/* le giua */
+.middle-page p{
+ margin-left: 150px;
+ color: black;
+ font-family: cursive;
+
+}
+
+body{
+    -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -o-user-select: none;
+           user-select: none;
+}
+
+
+/*
+<nav class="cartegory-left">
+</nav>
+
+<nav class="cartegory-right">
+    <div class="cartegory-right-content row">
+        <div class="cartegory-right-content-item">
+            <img src="image/sp1.jpg" alt="">
+            <h1>AIR MAX DAWN SE</h1>
+            <a href="product1.html"><p>3.600.000<sup>đ</sup></p></a>
+        </div>
+        <div class="cartegory-right-content-item">
+            <img src="image/sp2.jpeg" alt="">
+            <h1>ZOOM PEGASUS FLYEASE</h1>
+            <a href="product1.2.html"><p>3.800.000<sup>đ</sup></p></a>
+        </div>
+        
+        <div class="cartegory-right-content-item">
+            <img src="image/sp4.jpg" alt="">
+            <h1>REACT INFINITY RUN FK 2</h1>
+            <a href="product1.4.html"><p>3.800.000<sup>đ</sup></p></a>
+        </div>
+        <div class="cartegory-right-content-item">
+            <img src="image/sp5.jpeg" alt="">
+            <h1>AIR MAX 2021</h1>
+            <a href="product1.5.html"><p>3.900.000<sup>đ</sup></p></a>
+        </div>
+        
+    </div>
+</nav>

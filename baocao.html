@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="baocao.css">
+    <title>Nguyen37H2</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/images.png" width="217.42px"heght="64.98px">
+        </div>
+        <div class="menu">
+            <li><a href="baocao.html">TRANG CHỦ</a></li>
+            <li><a href="">NIKE</a>
+                <ul class="sub-menu">
+                    <li><a href="cartegory1.html">NAM</a></li>
+                    <li><a href="cartegory1.html">NỮ</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="">ADIDAS</a>
+                <ul class="sub-menu">
+                    <li><a href="">NAM</a></li>
+                    <li><a href="">NỮ</a></li>
+                </ul>
+            </li>
+            <li><a href="">JORDAN</a>
+                <ul class="sub-menu">
+                    <li><a href="">AIR JORDAN</a></li>
+                </ul>
+            </li>
+            <li><a href="">YEEZY</a>
+                <ul class="sub-menu">
+                    <li><a href="">YEEZY BOOST 350</a></li>
+                    <li><a href="">YEEZY BOOST 350</a></li>
+                </ul>
+            </li>
+            <li><a href="">SALE</a></li>
+            <li><a href="">DÂY GIÀY</a></li>
+            <li><a href="">SALE</a></li>
+        </div>
+        <div class="other">
+            <li><input placeholder="Tìm kiếm" type="text"> <button>tìm kiếm</button></li>
+        </div>
+    </header>
+<section id="Slider">
+<div class="aspect-ratio-169">
+    <img src="image/slide1.jpg" >
+    <img src="image/slide2.jpg" >
+    <img src="image/slide3.jpg" >
+</div>
+<div class="dot-container">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+</section>
+<!------------------------footer--------------------------->
+<div class="footer-top">
+    <li><a href=""><img src="image/li.png"></a></li>
+    <li><a href=""></a>Liên Hệ</li>
+    <li><a href=""></a>Tuyển dụng</li>
+    <li><a href=""></a>Giới Thiệu</li>
+    <li>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> 
+        <a href="" class="fab fa-facebook-f"></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="" class="fab fa-youtube"></a>                    
+    </li>
+    
+</div>
+<div class="footer-center">
+    <p>
+        Số ĐKKD: 41N8041309 cấp ngày 17/8/2018 <br> 
+        Nơi cấp Ủy Ban Nhân Dân Quận Tân Bình <br>
+        Hộ Kinh Doanh: 37H <br>     
+        Hotline: <span>0909.300.746</span>.
+    </p>
+</div>
+<div class="footer-bottom">
+    © Bản quyền thuộc về 37H Thiet Ke Web Chuẩn SEO Bởi SEOWEBMAKER.COM
+</div>
+</body>
+<script>
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+    const imgContainer = document.querySelector('.aspect-ratio-169')
+    const dotItem = document.querySelectorAll(".dot")
+    let imgNuber = imgPosition.length
+    let index = 0
+    //console.log(imgPosition)
+
+    imgPosition.forEach(function(image,index){
+        image.style.left = index*100 + "%"
+        dotItem[index],addEventListener("click",function(){
+        slider (index)
+        })
+    })
+    function imgSlide (){
+
+        index++;
+        console.log(index)
+        if(index>=imgNuber){index=0}
+        slider (index) 
+    }
+    function slider (index){
+        imgContainer.style.left = "-" +index*100+ "%"
+        const dotActive = document.querySelector('.active')
+        dotActive.classList.remove("active")
+        dotItem[index].classList.add("active")
+    }
+
+    setInterval(imgSlide,5000)
+</script>
+</html>
